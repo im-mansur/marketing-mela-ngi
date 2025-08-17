@@ -13,7 +13,7 @@ It highlights stalls, products, and categories in an interactive and visually en
 
 ## 🚀 Features  
 
-- 📅 **Countdown Timer** – Tracks time until the event (September 15, 2025).  
+- 📅 **Countdown Timer** – Tracks time until the event.  
 - 🏪 **Dynamic Stalls & Products** – Stalls and products load dynamically via JavaScript.  
 - 🎨 **Responsive & Modern UI** – Built with custom CSS for desktop and mobile.  
 - 📂 **Categories** – Filter stalls by Clothes, Food, Accessories, Handicrafts, and Games.  
@@ -35,7 +35,6 @@ It highlights stalls, products, and categories in an interactive and visually en
 ## 📸 Preview  
 
 ![Marketing Mela Screenshot](./preview.png)  
-*(Add a screenshot of your webpage and name it `preview.png` in the repo for this to work)*  
 
 ---
 
@@ -64,8 +63,9 @@ marketing-mela/
 ## 📞 Contact  
 
 📧 Email: info@marketingmela.com  
-📍 Location: Nehru Group Campus, Coimbatore, Tamil Nadu  
+📍 Location: Nehru Arts and Science College, Coimbatore, Tamil Nadu  
 
 ---
 
 📌 *Developed as part of the Marketing Mela 2025 event showcase project.*  
+
