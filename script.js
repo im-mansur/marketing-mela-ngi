@@ -13,7 +13,7 @@ const stallsData = {
             products: [
                 { name: "Butter Chicken", description: "Creamy tomato-based curry with tender chicken", price: "₹299" },
                 { name: "Biryani", description: "Fragrant basmati rice with aromatic spices", price: "₹349" },
-                { name: "Naan Bread", description: "Fresh baked tandoor bread", price: "₹89" },
+                { name: "Naan Bread", description: "Fresh baked tandoor bread", price: "₹199" },
                 { name: "Mango Lassi", description: "Traditional yogurt drink with mango", price: "₹129" }
             ]
         },
@@ -514,4 +514,5 @@ window.addEventListener('unhandledrejection', function(event) {
     console.error('Unhandled promise rejection:', event.reason);
     event.preventDefault(); // Prevent the default console error
 });
+
 
