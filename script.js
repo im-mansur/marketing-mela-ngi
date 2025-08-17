@@ -1,5 +1,5 @@
-// Event date - Set to September 15, 2025
-const eventDate = new Date("2025-09-15T09:00:00").getTime();
+// Event date - Set to September 1, 2025
+const eventDate = new Date("2025-09-01T10:30:00").getTime();
 
 // Data for stalls and products using pre-fetched stock photos
 const stallsData = {
@@ -514,3 +514,4 @@ window.addEventListener('unhandledrejection', function(event) {
     console.error('Unhandled promise rejection:', event.reason);
     event.preventDefault(); // Prevent the default console error
 });
+
