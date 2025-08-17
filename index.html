@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Mela - Event Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <img src="LOGO.png" alt="Nehru Group Logo" class="logo-image">
+                </div>
+                <div class="logo-text">
+                    <h3>NEHRU GROUP</h3>
+                    <p>OF INSTITUTIONS</p>
+                <div class="logo-tagline">TAMILNADU • KERALA</div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#categories" class="nav-link">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Countdown -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Marketing Mela</h1>
+            <div class="hero-description">
+                <p>Get ready for a spectacular celebration of creativity, community, and commerce.</p>
+                <p>The biggest marketing fair of the year is just around the corner.</p>
+            </div>
+            <div class="countdown-container">
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <span id="days">00</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">00</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2>Explore Our Categories</h2>
+            <p class="categories-subtitle">Discover amazing products and services across diverse categories</p>
+            <div class="categories-grid">
+                <div class="category-card active" data-category="all">
+                    <div class="category-icon">
+                        <span class="emoji-icon">🌍</span>
+                    </div>
+                    <h3>All</h3>
+                </div>
+                <div class="category-card" data-category="clothes">
+                    <div class="category-icon">
+                        <span class="emoji-icon">👕</span>
+                    </div>
+                    <h3>Clothes</h3>
+                </div>
+                <div class="category-card" data-category="accessories">
+                    <div class="category-icon">
+                        <span class="emoji-icon">💎</span>
+                    </div>
+                    <h3>Accessories</h3>
+                </div>
+                <div class="category-card" data-category="food">
+                    <div class="category-icon">
+                        <span class="emoji-icon">🍔</span>
+                    </div>
+                    <h3>Food</h3>
+                </div>
+                <div class="category-card" data-category="handicrafts">
+                    <div class="category-icon">
+                        <span class="emoji-icon">🎨</span>
+                    </div>
+                    <h3>Handicrafts</h3>
+                </div>
+                <div class="category-card" data-category="games">
+                    <div class="category-icon">
+                        <span class="emoji-icon">🎮</span>
+                    </div>
+                    <h3>Games</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stalls Section -->
+    <section id="stalls" class="stalls">
+        <div class="container">
+            <h2>Event Stalls</h2>
+            <div class="loading-message" id="loading-message" style="display: none;">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading stalls...</p>
+            </div>
+            <div class="error-message" id="error-message" style="display: none;">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Unable to load stalls. Please try refreshing the page.</p>
+            </div>
+            <div class="empty-state" id="empty-state" style="display: none;">
+                <i class="fas fa-store-slash"></i>
+                <p>No stalls available for this category.</p>
+            </div>
+            <div id="stalls-container" class="stalls-grid">
+                <!-- Stalls will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Modal -->
+    <div id="products-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Stall Products</h2>
+            <div id="products-container" class="products-grid">
+                <!-- Products will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Marketing Mela</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Marketing Mela is an annual event that brings together entrepreneurs, businesses, and customers in a vibrant marketplace atmosphere. Our event showcases the best products and services from local and regional vendors.</p>
+                    <p>Founded in 2010, Marketing Mela has grown from a small local gathering to one of the region's most anticipated business events. We provide a platform for businesses to connect with customers and showcase their innovations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@marketingmela.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Nehru Group Campus<br>Coimbatore, Tamil Nadu</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Event Hours</h4>
+                            <p>September 15, 2025<br>9:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Marketing Mela 2025</h4>
+                    <p>Celebrating creativity, community, and commerce.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Marketing Mela - Nehru Group of Institutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
