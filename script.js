@@ -9,7 +9,7 @@ const stallsData = {
             name: "Spice Garden",
             description: "Authentic Indian cuisine with traditional flavors and modern presentation",
             category: "Food & Beverages",
-            image: "https://pixabay.com/get/ged4e99ecf4cd4814c260b244281ad7dc03c8c7944c8bf1f2bbf5cf0be098bd9b62bfd081a52627deb0d4ff508711eba9898100a1bacbe279a0ca70f1ef588bd1_1280.jpg",
+            image: "https://raw.githubusercontent.com/im-mansur/marketing-mela-ngi/refs/heads/main/IMG/cartoon-illustration-crowded-marketplace_36682-227568.avif",
             products: [
                 { name: "Butter Chicken", description: "Creamy tomato-based curry with tender chicken", price: "₹299" },
                 { name: "Biryani", description: "Fragrant basmati rice with aromatic spices", price: "₹349" },
@@ -514,5 +514,6 @@ window.addEventListener('unhandledrejection', function(event) {
     console.error('Unhandled promise rejection:', event.reason);
     event.preventDefault(); // Prevent the default console error
 });
+
 
 
